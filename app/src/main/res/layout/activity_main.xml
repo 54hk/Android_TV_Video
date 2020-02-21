@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:focusable="false"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:focusable="false"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorAccent"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="我是tv1"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tv1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="tv2"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:background="@color/color_00f"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="120dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv3"
+                    android:background="@color/colorPrimary"
+                    android:focusable="true" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv4"
+                    android:background="@color/colorPrimary"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+
+            <!-- 第二列-->
+            <RelativeLayout
+                android:id="@+id/main2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:focusable="false"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/main2_tv1"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:background="@color/colorAccent"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="我是tv1"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/main2_tv2"
+                    android:layout_width="500dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/main2_tv1"
+                    android:background="@color/color_00f"
+                    android:focusable="true" />
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/main2_tv2"
+                    android:background="@color/colorPrimary"
+                    android:focusable="true" />
+            </RelativeLayout>
+            <!--            第三个-->
+
+            <RelativeLayout
+                android:id="@+id/main3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:focusable="false"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/main3_tv"
+                    android:layout_width="120dp"
+                    android:focusable="true"
+                    android:layout_height="300dp"
+                    android:background="@color/colorPrimary">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/main3_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/main3_tv"
+                    android:focusable="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:background="@color/colorAccent"
+                        android:layout_height="120dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:layout_height="120dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/main3_tv2"
+                    android:layout_width="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="true"
+                    android:layout_toRightOf="@+id/main3_line1"
+                    android:layout_height="300dp"
+                    android:background="@color/colorPrimary">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/main3_tv3"
+                    android:layout_width="200dp"
+                    android:focusable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/main3_tv2"
+                    android:layout_height="300dp"
+                    android:background="@color/colorAccent">
+
+                </TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

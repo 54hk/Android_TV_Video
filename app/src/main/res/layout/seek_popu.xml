@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <!-- 展现当前播放进度时间的文本框-->
+    <TextView
+        android:id="@+id/dialogSeekTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="12dip"
+        android:text="不明确的时间"
+        android:textColor="@color/color_black"
+        android:textSize="12sp" />
+</RelativeLayout>
